@@ -18,14 +18,14 @@ server:
   address: 0.0.0.0
 
 spring:
-   main:
-     allow-bean-definition-overriding: true
-   application:
+  main:
+    allow-bean-definition-overriding: true
+  application:
     name: soul-bootstrap
-#   cloud:
-#    nacos:
-#       discovery:
-#          server-addr: 127.0.0.1:8848
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 
 management:
   health:
@@ -40,8 +40,8 @@ soul :
     dubbo :
       parameter: multi
     sync:
-        websocket :
-             urls: ws://localhost:9095/websocket
+      websocket :
+        urls: ws://localhost:9095/websocket
 
 #        zookeeper:
 #             url: localhost:2181

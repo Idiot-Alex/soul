@@ -66,8 +66,8 @@
     <select id="countByQuery" parameterType="org.dromara.soul.admin.query.PluginQuery" resultType="java.lang.Integer">
         select count(1)
         from plugin
-        <if test="name != null">
-            where name = #{name,jdbcType=VARCHAR}
+        <if test="user != null">
+            where user = #{user, jdbcType=VARCHAR}
         </if>
     </select>
     <select id="selectAll" resultType="org.dromara.soul.admin.entity.PluginDO" resultMap="BaseResultMap">

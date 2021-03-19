@@ -29,7 +29,7 @@ import java.util.List;
  *
  * @author jiangxiaofeng(Nicholas)
  */
-public interface DashboardUserService {
+public interface  DashboardUserService {
 
     /**
      * create or update dashboard user.
